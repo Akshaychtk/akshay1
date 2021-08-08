@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indian Matrimony</title>
+</head>
+<style>
+.heading{
+background-color : red;
+color : white;
+}
+.menubar{
+background-color : #333;
+overflow : hidden;
+}
+.menubar a{
+display : block;
+float : left;
+color : orange;
+text-align : center;
+padding : 14px 16px;
+}
+.details{
+padding : 15px;
+}
+.text {
+        font-size: 20px;
+        padding-left: 20px;
+}
+.container {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+      }
+#tail{
+color : black;
+text-align : center;
+}
+</style>
+<body style="background-color : lightblue;">
+<div class="heading">
+<h1 align="center">Indian Matrimony</h1>
+</div>
+<br>
+<div class="menubar">
+  <a href="mabout">About Us</a>
+  <a href="mcontact">Contact Us</a>
+  <a href="mprivacy">Privacy Policy</a>
+  <a href="resume_neha" style="float:right">My Profile</a>
+</div>
+<br>
+<input type="text" id="search" align="center" placeholder="Search by #id or by name">
+<button type="submit">Search</button>
+<hr>
+<h2 style="color : blue; background-color : lightgreen;">AVAILABLE MATCHES</h2>
+<hr>
+<div class="container">
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707553652763424848&th=17b273000be27850&view=att&disp=safe&realattid=17b272ed1fe5ec0c5421" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>ADHARSH K
+<h4>AGE :</h4>19
+<h4>OCCUPATION :</h4>CRICKETER
+<br>
+<br>
+<form method="post" action="resume_adharsh">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest2">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+
+<div class="container">
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707555529821201837&th=17b274b5153f25ad&view=att&disp=safe&realattid=f_ks3m6f7j0" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>HARIPRASAD .K
+<h4>AGE :</h4>19
+<h4>OCCUPATION :</h4>DIRECTOR
+<br>
+<br>
+<form method="post" action="resume_hari">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest2">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+
+<div class="container">
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707555342306981830&th=17b274896c8737c6&view=att&disp=safe&realattid=f_ks3m2jho0" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>NIHALRAJ EK
+<h4>AGE :</h4>19
+<h4>OCCUPATION :</h4>FOOTBALLER
+<br>
+<br>
+<form method="post" action="resume_nihal">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest2">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+<h6 id="tail">TERMS AND CONDITIONS APPLIED</h6>
+</body>
+</html>

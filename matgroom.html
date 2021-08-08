@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indian Matrimony</title>
+</head>
+<style>
+.heading{
+background-color : red;
+color : white;
+}
+.menubar{
+background-color : #333;
+overflow : hidden;
+}
+.menubar a{
+display : block;
+float : left;
+color : orange;
+text-align : center;
+padding : 14px 16px;
+}
+.details{
+padding : 15px;
+}
+.text {
+        font-size: 20px;
+        padding-left: 20px;
+}
+.container {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+      }
+#tail{
+color : black;
+text-align : center;
+}
+</style>
+<body style="background-color : lightblue;">
+<div class="heading">
+<h1 align="center">Indian Matrimony</h1>
+</div>
+<br>
+<div class="menubar">
+  <a href="mabout">About Us</a>
+  <a href="mcontact">Contact Us</a>
+  <a href="mprivacy">Privacy Policy</a>
+  <a href="resume_akshay" style="float:right">My Profile</a>
+</div>
+<br>
+<input type="text" id="search" align="center" placeholder="Search by #id or by name">
+<button type="submit">Search</button>
+<hr>
+<h2 style="color : blue; background-color : lightgreen;">AVAILABLE MATCHES</h2>
+<hr>
+<div class="container">
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707556708878628600&th=17b275c79a8bb6f8&view=att&disp=inline&realattid=f_ks3mui9l0" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>AMISHA P BAJU
+<h4>AGE :</h4>18
+<h4>OCCUPATION :</h4>FASHION DESIGNER
+<br>
+<br>
+<form method="post" action="resume_amisha">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest1">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+
+<div class="container">
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707556522184152006&th=17b2759c22b013c6&view=att&disp=safe&realattid=f_ks3mqo750" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>POORNIMA
+<h4>AGE :</h4>19
+<h4>OCCUPATION :</h4>DOCTOR
+<br>
+<br>
+<form method="post" action="resume_poornima">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest1">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+
+<div class="container">\
+      <div class="image">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=8538d36950&attid=0.1&permmsgid=msg-f:1707556417443167148&th=17b27583bfa37bac&view=att&disp=safe&realattid=f_ks3modre0" width="300px" height="380px">
+      </div>
+      <div class="text">
+        <h4>NAME :</h4>PARVATHY
+<h4>AGE :</h4>19
+<h4>OCCUPATION :</h4>MODEL
+<br>
+<br>
+<form method="post" action="resume_parvathy">
+    {% csrf_token %}
+<button type="submit" id="submit">View Profile</button>
+</form>
+<br>
+<a href="minterest1">Show Your Interest</a>
+</form>
+      </div>
+    </div>
+<hr>
+<h6 id="tail">TERMS AND CONDITIONS APPLIED</h6>
+</body>
+</html>
